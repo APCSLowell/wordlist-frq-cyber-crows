@@ -21,10 +21,10 @@ public class WordList
   {
     int r=0; 
     for(int i=0;i<myList.size();i++){
-      if(myList.get(r).length()==len){
+      if(myList.get(r).length()==len)
         myList.remove(r);
+      else 
         r++;
       }
     }
   }
-}
