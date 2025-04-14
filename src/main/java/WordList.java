@@ -10,23 +10,22 @@ public class WordList
 
   public int numWordsOfLength(int len)
   {
-    ArrayList <Integer> digitList = new ArrayList <Integer>();  
-    if(len==0)
-      digitList.add(0);
-    for (int i=0;i>digitList.size();i++)
-      digitList.add(len/10,len%10);
-    return digitList; 
+    int count=0; 
+    for(int=0;i<WordList.size();i++)
+      if(wordList.get(r).length==len)
+        count++;
+    return count; 
   }
 
   public void removeWordsOfLength(int len)
   {
-    int lastvalue=0;
-   for(int i=0; i < digitList.size(); i++){
-     if(digitList.get(i)<=lastvalue)
-       return false; 
-    if(digitList.get(i))> lastvalue)
-      lastvalue=digitList.get(i);
+    int r=0; 
+    for(int i=0;i<count;i++){
+      if(wordList.get(r).size()==len){
+        WordList.remove(r);
+        r++;
+      }
     }
-    return true; 
+    return wordList; 
   }
 }
