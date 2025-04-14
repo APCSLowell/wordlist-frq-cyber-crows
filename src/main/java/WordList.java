@@ -17,14 +17,11 @@ public class WordList
     return count; 
   }
 
-  public void removeWordsOfLength(int len)
-  {
-    int r=0; 
-    for(int i=0;i<myList.size();i++){
-      if(myList.get(r).length()==len)
-        myList.remove(r);
-      else 
-        r++;
+ public void removeWordsOfLength(int len) {
+    for (int i = myList.size() - 1; i >= 0; i--) {
+      if (myList.get(i).length() == len) {
+        myList.remove(i);
       }
     }
+  }
   }
