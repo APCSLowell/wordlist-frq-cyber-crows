@@ -12,7 +12,7 @@ public class WordList
   {
     int count=0; 
     for(int i=0;i<myList.size();i++)
-      if(myList.get(r).length()==len)
+      if(myList.get(i).length()==len)
         count++;
     return count; 
   }
@@ -20,7 +20,7 @@ public class WordList
   public void removeWordsOfLength(int len)
   {
     int r=0; 
-    for(int i=0;i<count;i++){
+    for(int i=0;i<MyList.size();i++){
       if(myList.get(r).length()==len){
         myList.remove(r);
         r++;
